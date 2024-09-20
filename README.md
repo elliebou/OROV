@@ -32,8 +32,8 @@ npm install --global auspice
 
 4. Clone this repository
 ```bash
-git clone git@github.com:elliebou/JCV-nextstrain.git
-cd JCV-nextstrain
+git clone git@github.com:elliebou/OROV-nextstrain.git
+cd OROV-nextstrain
 ```
 
 6. Check augur & auspice are installed:
@@ -43,9 +43,9 @@ auspice -h
 ```
 
 ## File Structure
-* `Snakefile` - contains the augur / JCV-custom steps to run the build. Each snakemake command can be run as a bash command on it's own, but we use snakemake to simplify things.
+* `Snakefile` - contains the augur / OROV-custom steps to run the build. Each snakemake command can be run as a bash command on it's own, but we use snakemake to simplify things.
 * `./data/*` - the input files (private, and not committed to github). You are responsible for creating the two required files here: `./data/full_dataset.fasta` and `./data/headers.csv` (these are referenced in the `Snakefile`).
-* `./scripts/*` custom JCV scripts. Called by commands in the `Snakefile.
+* `./scripts/*` custom OROV scripts. Called by commands in the `Snakefile.
 * `./results/` augur will produce a number of (intermediate) files including the alignment, newick trees etc. Not committed to github.
 * `./auspice/` will contain the JSONs necessary for visualisation by auspice.
 
